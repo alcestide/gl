@@ -1,10 +1,9 @@
 CC=g++
 SOURCE	= main.cpp include/glad.c
-DEPS = include/glad.h
-OBJ = include/glad.c main.cpp 
+LIBS = glfw shaders/shaderClass.cpp shaders/VAO.cpp shaders/VBO.cpp shaders/EBO.cpp
 OUT = bin
 
 gl: $(OBJ)
-	$(CC) $(SOURCE) -o $(OUT) -l glfw 
+	$(CC) $(SOURCE) -o $(OUT) -l $(LIBS) 
 
 
