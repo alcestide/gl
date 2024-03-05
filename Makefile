@@ -4,6 +4,6 @@ LIBS = glfw shaders/shaderClass.cpp shaders/VAO.cpp shaders/VBO.cpp shaders/EBO.
 OUT = bin
 
 gl: $(OBJ)
-	$(CC) $(SOURCE) -o $(OUT) -l $(LIBS) 
+	$(CC) $(SOURCE) -o $(OUT) -l $(LIBS) --debug 
 
 
